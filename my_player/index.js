@@ -1,9 +1,16 @@
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;")
+})
+
+
 const player = {
     name:'Sirosse',
     class: 'Paladin',
     hp: 8,
     dmg:4,
-    mana: 13,
+    mana: 130,
 }
 
 const updatePlayer = () => {

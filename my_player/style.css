@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: none;
+    overflow: hidden;
+}
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: crimson;
+    border-radius: 50%;
+}
